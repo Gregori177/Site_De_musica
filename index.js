@@ -3,4 +3,5 @@ function tocar(arquivo) {
 
     player.src = arquivo;
     player.play();
+    
 }
