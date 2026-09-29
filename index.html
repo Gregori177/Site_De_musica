@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,40 @@
     <link rel="stylesheet" href="/index.css">
     <script src="/index.js"></script>
 </head>
+
 <body>
     <div class="cabecalho">
-    <img src="/img/logo.png" alt="">
+        <img src="/img/logo.png" alt="">
         <h1>Ximpa Musicas</h1>
     </div>
+    <div class="titulo">
+        <h1>Minhas músicas</h1>
+    </div>
+    <div class="musicas">
+
+
+        <div>
+            <h2>Expresso Da Meia Noite</h2>
+            <p><strong>Artista:</strong>Racionais</p>
+            <p>Uma música que fala sobre a triste realidade.</p>
+            <button onclick="tocar('musica/expresso.mp3')">Tocar</button>
+        </div>
+
+        <div>
+            <h2>Dois Amores, Duas Paixões</h2>
+            <p><strong>Artista:</strong>Calcinha Preta</p>
+            <p>Uma musica sobre 2 paixões.</p>
+            <button onclick="tocar('musica2.mp3')">Tocar</button>
+        </div>
+
+        <div>
+            <h2>Música 3</h2>
+            <p><strong>Artista:</strong> Pedro Santos</p>
+            <p>Uma música com um estilo mais calmo e relaxante.</p>
+            <button onclick="tocar('musica3.mp3')">Tocar</button>
+        </div>
+    </div>
+    <audio id="player"></audio>
 </body>
+
 </html>

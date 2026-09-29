@@ -18,5 +18,14 @@ body{
 .cabecalho img{
     width: 120px;
     height: 140px;
-    margin-left: 10px;
+    margin-left: 20px;
+}
+.titulo{
+    color: white;
+}
+.musicas {
+    background-color: rgb(43, 42, 42);
+    color: white;
+    margin-left: 500px;
+    margin-top: 20px;
 }
