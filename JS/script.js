@@ -1,38 +1,52 @@
-let indiceMusica = 0;
+document.addEventListener("DOMContentLoaded", function () {
 
-const musicas = document.querySelectorAll(".musica");
+    let indiceMusica = 0;
 
-function mostrarMusica(indice) {
-    musicas.forEach((musica) => {
-        musica.classList.remove("ativa");
+    const musicas = document.querySelectorAll(".musica");
 
+    function mostrarMusica(indice) {
 
-        const audio = musica.querySelector("audio");
-        audio.pause();
-        audio.currentTime = 0;
-    });
+        musicas.forEach(function (musica) {
 
-    musicas[indice].classList.add("ativa");
-}
+            musica.classList.remove("ativa");
 
-function proximaMusica() {
-    indiceMusica++;
+            const audio = musica.querySelector("audio");
 
-    if (indiceMusica >= musicas.length) {
-        indiceMusica = 0;
+            if (audio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        });
+
+        musicas[indice].classList.add("ativa");
     }
 
-    mostrarMusica(indiceMusica);
-}
+    function proximaMusica() {
 
-function musicaAnterior() {
-    indiceMusica--;
+        indiceMusica++;
 
-    if (indiceMusica < 0) {
-        indiceMusica = musicas.length - 1;
+        if (indiceMusica >= musicas.length) {
+            indiceMusica = 0;
+        }
+
+        mostrarMusica(indiceMusica);
     }
 
-    mostrarMusica(indiceMusica);
-}
+    function musicaAnterior() {
 
-mostrarMusica(indiceMusica);
+        indiceMusica--;
+
+        if (indiceMusica < 0) {
+            indiceMusica = musicas.length - 1;
+        }
+
+        mostrarMusica(indiceMusica);
+    }
+
+    // Disponibiliza as funções para os botões do HTML
+    window.proximaMusica = proximaMusica;
+    window.musicaAnterior = musicaAnterior;
+
+    mostrarMusica(indiceMusica);
+
+});
