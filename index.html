@@ -1,29 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ximpa Musicas</title>
-    <script src="JS/script.js"></script>
+    <title>Site De Musica</title>
     <link rel="stylesheet" href="/CSS/style.css">
-
+    <script src="/JS/script.js"></script>
 </head>
+
 <body>
-    
-      <div class="cabecalho">
-    <img src="/img/logo.png" alt="">
+    <div class="cabecalho">
+        <img src="/img/logo.png" alt="">
         <h1>Ximpa Musicas</h1>
     </div>
+    <div class="titulo">
+        <h1>Minhas músicas</h1>
+    </div>
+    <div class="musicas">
 
-    <div class="carrossel" id="carrossel">
-  <div class="item">1</div>
-  <div class="item">2</div>
-  <div class="item">3</div>
+
+       <div class="carrossel">
+    <button class="seta esquerda" onclick="musicaAnterior()">‹</button>
+
+    <div class="musicas">
+
+        <div class="musica ativa">
+            <img src="/img/racionais.jpg" alt="Racionais">
+            <h2>Expresso Da Meia Noite</h2>
+            <p><strong>Artista:</strong> Racionais</p>
+            <p>Uma música que fala sobre a triste realidade.</p>
+            <audio controls src="/musica/musica_expresso.mp3"></audio>
+        </div>
+
+        <div class="musica">
+            <img src="/img/calcinha-preta.avif" alt="Calcinha Preta">
+            <h2>Dois Amores, Duas Paixões</h2>
+            <p><strong>Artista:</strong> Calcinha Preta</p>
+            <p>Uma música sobre 2 paixões.</p>
+            <audio controls src="/musica/musica_2amores.mp3"></audio>
+        </div>
+
+        <div class="musica">
+            <img src="/img/eye.jpg" alt="Survivor">
+            <h2>Eye of the Tiger</h2>
+            <p><strong>Artista:</strong> Survivor</p>
+            <p>Uma música sobre superação.</p>
+            <audio controls src="/musica/musica_eye.mp3"></audio>
+        </div>
+
+        <div class="musica">
+            <img src="/img/bj.jpg" alt="B.J. Thomas">
+            <h2>Raindrops Keep Falling on My Head</h2>
+            <p><strong>Artista:</strong> B.J. Thomas</p>
+            <p>Uma música sobre um dia tranquilo.</p>
+            <audio controls src="/musica/musica_bj.mp3"></audio>
+        </div>
+
+    </div>
+
+    <button class="seta direita" onclick="proximaMusica()">›</button>
 </div>
 
-
-<button id="anterior">Anterior</button>
-<button id="proximo">Próximo</button>
-
+    <audio id="player"></audio>
 </body>
+
 </html>
