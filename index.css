@@ -1,29 +1,35 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     background-color: gray;
 }
-.cabecalho{
+
+.cabecalho {
     background-color: black;
     display: flex;
 }
-.cabecalho h1{
+
+.cabecalho h1 {
     color: green;
     margin-left: 710px;
     margin-top: 50px;
-    
+
 }
-.cabecalho img{
+
+.cabecalho img {
     width: 120px;
     height: 140px;
     margin-left: 20px;
 }
-.titulo{
+
+.titulo {
     color: white;
     text-align: center;
 }
+
 .musicas {
     background-color: rgb(43, 42, 42);
     color: white;
@@ -32,12 +38,24 @@ body{
     box-shadow: 5px 5px 3px green;
     display: flex;
 }
-.musicas img{
+
+.musicas img {
     height: 150px;
     width: 150px;
     margin-left: 200px;
     margin-top: 5px;
 }
-.musicas p,h2,audio{
+
+.musicas p,
+h2,
+audio {
     margin-left: 120px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    color: green;
+    text-align: center;
+    padding: 30px;
 }
