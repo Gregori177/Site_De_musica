@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ximpa Músicas</title>
+
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <img src="/img/logo.png" alt="Logo Ximpa">
+        <h1>Ximpa Músicas</h1>
+    </div>
+
+    <div class="titulo">
+        <h1>Minhas músicas</h1>
+    </div>
+
+    <div class="musicas">
+
+        <div class="card">
+            <img src="/img/racionais.jpg" alt="Racionais">
+            <h2>Expresso Da Meia Noite</h2>
+            <p><strong>Artista:</strong> Racionais</p>
+            <p>Uma música que fala sobre a triste realidade.</p>
+            <audio controls src="/musica/expresso.mp3"></audio>
+        </div>
+
+        <div class="card">
+            <img src="/img/calcinha-preta.avif" alt="Calcinha Preta">
+            <h2>Dois Amores, Duas Paixões</h2>
+            <p><strong>Artista:</strong> Calcinha Preta</p>
+            <p>Uma música sobre 2 paixões.</p>
+            <audio controls src="/musica/2amores.mp3"></audio>
+        </div>
+
+        <div class="card">
+            <img src="/img/eye.jpg" alt="Survivor">
+            <h2>Eye of the Tiger</h2>
+            <p><strong>Artista:</strong> Survivor</p>
+            <p>Uma música sobre superação.</p>
+            <audio controls src="/musica/eye.mp3"></audio>
+        </div>
+
+        <div class="card">
+            <img src="/img/bj.jpg" alt="B.J. Thomas">
+            <h2>Raindrops Keep Falling on My Head</h2>
+            <p><strong>Artista:</strong> B.J. Thomas</p>
+            <p>Uma música sobre um dia tranquilo.</p>
+            <audio controls src="/musica/bj.mp3"></audio>
+        </div>
+
+    </div>
+
+
+    <div class="musicas">
+
+        <div class="card">
+            <img src="/img/baroes.jpg" alt="Barões da Pisadinha">
+            <h2>Barões da Pisadinha</h2>
+            <p><strong>Artista:</strong> Barões da Pisadinha</p>
+            <p>Uma música sobre sofrência.</p>
+            <audio controls src="/musica/baroes.mp3"></audio>
+        </div>
+
+        <div class="card">
+            <img src="/img/mamonas.webp" alt="Mamonas Assassinas">
+            <h2>Jumento Celestino</h2>
+            <p><strong>Artista:</strong> Mamonas Assassinas</p>
+            <p>Uma música sobre imigração.</p>
+            <audio controls src="/musica/mamonas.mp3"></audio>
+        </div>
+
+        <div class="card">
+            <img src="/img/pablo.jpg" alt="Pablo">
+            <h2>Tomara</h2>
+            <p><strong>Artista:</strong> Pablo</p>
+            <p>Uma música sobre sofrimento.</p>
+            <audio controls src="/musica/tomara.mp3"></audio>
+        </div>
+
+        <div class="card">
+            <img src="/img/joao.jpg" alt="João Gomes">
+            <h2>Flor de Tangerina</h2>
+            <p><strong>Artista:</strong> João Gomes</p>
+            <p>Uma música sobre o sonho do amor voltar.</p>
+            <audio controls src="/musica/flor.mp3"></audio>
+        </div>
+
+    </div>
+
+
+    <!-- CARROSSEL -->
+
+    <div class="carrossel">
+
+        <button class="seta esquerda" onclick="musicaAnterior()">‹</button>
+
+        <div class="carrossel-musicas">
+
+            <div class="musica2 ativa">
+                <img src="/img/racionais.jpg" alt="Racionais">
+                <h2>Expresso Da Meia Noite</h2>
+                <p><strong>Artista:</strong> Racionais</p>
+                <p>Uma música que fala sobre a triste realidade.</p>
+                <audio controls src="/musica/expresso.mp3"></audio>
+            </div>
+
+            <div class="musica2">
+                <img src="/img/calcinha-preta.avif" alt="Calcinha Preta">
+                <h2>Dois Amores, Duas Paixões</h2>
+                <p><strong>Artista:</strong> Calcinha Preta</p>
+                <p>Uma música sobre 2 paixões.</p>
+                <audio controls src="/musica/2amores.mp3"></audio>
+            </div>
+
+            <div class="musica2">
+                <img src="/img/eye.jpg" alt="Survivor">
+                <h2>Eye of the Tiger</h2>
+                <p><strong>Artista:</strong> Survivor</p>
+                <p>Uma música sobre superação.</p>
+                <audio controls src="/musica/eye.mp3"></audio>
+            </div>
+
+            <div class="musica2">
+                <img src="/img/bj.jpg" alt="B.J. Thomas">
+                <h2>Raindrops Keep Falling on My Head</h2>
+                <p><strong>Artista:</strong> B.J. Thomas</p>
+                <p>Uma música sobre um dia tranquilo.</p>
+                <audio controls src="/musica/bj.mp3"></audio>
+            </div>
+
+        </div>
+
+        <button class="seta direita" onclick="proximaMusica()">›</button>
+
+    </div>
+
+
+    <footer>
+        <h3>Ximpa Músicas</h3>
+        <p>Colaboradores: Gregori e Raphael</p>
+        <p>Instagram: @Gregori_177 e @raphaell.gms_</p>
+        <p>Tiktok: @Gregori17706 e @raphaelgomees__</p>
+    </footer>
+
+</body>
+
+</html>
