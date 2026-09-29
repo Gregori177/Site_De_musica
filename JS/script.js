@@ -1,4 +1,4 @@
-const carrossel = document.querySelector("#carrossel");
+const video = document.querySelector("video");
 const proximo = document.querySelector("#proximo");
 const anterior = document.querySelector("#anterior");
 
